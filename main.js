@@ -53,10 +53,10 @@ function my_mousemove(e){
         console.log("x = " + current_position_of_mouse_x + " y = " + current_position_of_mouse_y);
         console.log(radius);
         console.log(color);
-        console.log(width_of_line);
+        console.log(width);
         ctx.beginPath();
         ctx.strokeStyle = color;
-        ctx.lineWidth = width_of_line;
+        ctx.lineWidth = width;
         ctx.arc(current_position_of_mouse_x, current_position_of_mouse_y, radius, 0 , 2* Math.PI);
         ctx.stroke();
 
